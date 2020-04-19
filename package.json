@@ -2,12 +2,12 @@
   "name": "90s-hack-syntax",
   "theme": "syntax",
   "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "description": "A very dark 90s inspired theme",
   "keywords": [
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/atom/90s-hack-syntax",
+  "repository": "https://github.com/starlightromero/90s-hack-syntax.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

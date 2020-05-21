@@ -55,7 +55,8 @@ atom-text-editor {
 // Syntax styles
 
 .syntax--comment {
-  color: @dark-grey;
+  color: @black;
+  background-color: @green;
 }
 
 .syntax--keyword {
@@ -74,7 +75,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--unit {
-    color: @purple;
+    color: @green;
   }
 }
 
@@ -83,7 +84,7 @@ atom-text-editor {
 }
 
 .syntax--constant {
-  color: @light-grey;
+  color: @neon-green;
 
   &.syntax--character.syntax--escape {
     color: @neon-yellow;
@@ -94,7 +95,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--color {
-    color: @purple;
+    color: @dark-yellow;
   }
 
   &.syntax--other.syntax--symbol {
@@ -103,7 +104,7 @@ atom-text-editor {
 }
 
 .syntax--variable {
-  color: @yellow;
+  color: @green;
 
   &.syntax--interpolation {
     color: darken(@yellow, 10%);
@@ -139,7 +140,8 @@ atom-text-editor {
 .syntax--punctuation {
   &.syntax--definition {
     &.syntax--comment {
-      color: @dark-grey;
+      color: @black;
+      background-color: @green;
     }
 
     &.syntax--string,
@@ -173,32 +175,31 @@ atom-text-editor {
 
 .syntax--support {
   &.syntax--class {
-    color: @dark-yellow;
+    color: @yellow;
   }
 
   &.syntax--function  {
-    color: @dark-yellow;
+    color: @yellow;
 
     &.syntax--any-method {
-      color: @dark-yellow;
+      color: @yellow;
     }
   }
 }
 
 .syntax--entity {
   &.syntax--name.syntax--function {
-    color: @yellow;
+    color: @light-green;
   }
   &.syntax--name.syntax--type {
     color: @purple;
-    text-decoration: underline;
   }
 
   &.syntax--other.syntax--inherited-class {
     color: @green;
   }
   &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
-    color: @purple;
+    color: @dark-yellow;
   }
 
   &.syntax--name.syntax--section {
@@ -211,10 +212,10 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--attribute-name {
-    color: @dark-green;
+    color: @neon-green;
 
     &.syntax--id {
-      color: @dark-green;
+      color: @neon-green;
     }
   }
 }
@@ -233,7 +234,7 @@ atom-text-editor {
   }
 
   &.syntax--selector {
-    color: @purple;
+    color: @green;
   }
 
   &.syntax--separator {

@@ -5,7 +5,7 @@ atom-text-editor {
   color: @syntax-text-color;
 
   .wrap-guide {
-    background-color: @syntax-wrap-guide-color;
+    background-color: transparent;
   }
 
   .indent-guide {
@@ -105,6 +105,7 @@ atom-text-editor {
 
 .syntax--variable {
   color: @green;
+  border-bottom: 1px solid green;
 
   &.syntax--interpolation {
     color: darken(@yellow, 10%);
@@ -157,18 +158,18 @@ atom-text-editor {
     }
 
     &.syntax--bold {
-      color: @purple;
+      color: @neon-green;
       font-weight: bold;
     }
 
     &.syntax--italic {
-      color: @purple;
+      color: @neon-green;
       font-style: italic;
     }
   }
 
   &.syntax--section.syntax--embedded {
-    color: darken(@red, 10%);
+    color: @green;
   }
 
 }
@@ -192,11 +193,11 @@ atom-text-editor {
     color: @light-green;
   }
   &.syntax--name.syntax--type {
-    color: @purple;
+    color: @dark-yellow;
   }
 
   &.syntax--other.syntax--inherited-class {
-    color: @green;
+    color: @dark-yellow;
   }
   &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
     color: @dark-yellow;
@@ -207,15 +208,14 @@ atom-text-editor {
   }
 
   &.syntax--name.syntax--tag {
-    color: @yellow;
-    text-decoration: underline;
+    color: @neon-green;
   }
 
   &.syntax--other.syntax--attribute-name {
-    color: @neon-green;
+    color: @light-green;
 
     &.syntax--id {
-      color: @neon-green;
+      color: @light-green;
     }
   }
 }
@@ -249,7 +249,7 @@ atom-text-editor {
 
 .syntax--markup {
   &.syntax--bold {
-    color: @purple;
+    color: @neon-green;
     font-weight: bold;
   }
 
@@ -262,12 +262,12 @@ atom-text-editor {
   }
 
   &.syntax--italic {
-    color: @purple;
+    color: @neon-green;
     font-style: italic;
   }
 
   &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
-    color: @purple;
+    color: @bright-yellow;
   }
 
   &.syntax--inserted {
@@ -275,11 +275,11 @@ atom-text-editor {
   }
 
   &.syntax--list {
-    color: @red;
+    color: @light-green;
   }
 
   &.syntax--quote {
-    color: @purple;
+    color: @dark-yellow;
   }
 
   &.syntax--raw.syntax--inline {
